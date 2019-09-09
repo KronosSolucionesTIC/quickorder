@@ -46,7 +46,7 @@ if (isset($_POST['Ingresar'])) {
             //$users->getLog($_POST['username']);
             session_start(); //Registra la sesion
             $_SESSION['username'] = $_POST['username'];
-            header('location: ../views/users/index.php');
+            header('location: ../views/administrador/index.php');
         } else {
             header('location: ../views/login/index.php?pass=false');
         }
