@@ -9,6 +9,7 @@ class Conexion
     public function __construct()
     {
         /* Local */
+
         $this->host     = "localhost"; //
         $this->user     = "root"; //Usuario Base de datos
         $this->password = ""; //Contraseña de usuario de base de datos
@@ -16,10 +17,10 @@ class Conexion
 
         /* Servidor */
         /*
-    $this->host     = "dbantsgmysql.chvqhnsfueef.us-east-1.rds.amazonaws.com"; //
-    $this->user     = "sysaugurdb"; //Usuario Base de datos
-    $this->password = "4cc3s0DBaugur19"; //Contraseña de usuario de base de datos
-    $this->dataBase = "DBAUGUR"; //Nombre de la base de datos
+    $this->host     = "fdb23.awardspace.net"; //
+    $this->user     = "3151581_app"; //Usuario Base de datos
+    $this->password = "Adiegomarin1"; //Contraseña de usuario de base de datos
+    $this->dataBase = "3151581_app"; //Nombre de la base de datos
      */
 
     }

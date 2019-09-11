@@ -47,7 +47,7 @@ $user = new Users();
 
     <!-- Login Form -->
     <form action="../../controllers/users_controller.php" method="POST">
-      <input type="text" id="username" class="fadeIn second" name="username" placeholder="login">
+      <input type="text" id="username" class="fadeIn second" name="username" placeholder="Usuario">
       <input type="password" class="fadeIn third" id="passwd" name="passwd" autofocus placeholder="Contraseña" required>
       <input type="submit" class="fadeIn fourth" value="Ingresar"  name="Ingresar" >
     </form>
