@@ -5,9 +5,9 @@ include '../header.php';
 include '../../models/users.php';
 $user = new Users();
 ?>
-<div class="container-fluid">
-
-  <form action="../../controllers/users_controller.php" method="POST">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
     <div class="form-group text-center">
       <?php if (isset($_GET['existe'])) {?>
@@ -40,50 +40,22 @@ $user = new Users();
         </div>
       <?php }?>
     </div>
-
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xs-12 text-center">
-        <img src="../../images/fondo.png" class="img-fluid">
-      </div>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="../../images/fondo.png" class="img-fluid">
     </div>
 
-    <div class="row">
-      <div class="col-lg-4">
-      </div>
-      <div class="col-lg-4 text-left" >
-        <label for="nombre" class="label_formularios">Usuario:</label>
-        <input type="text" class="form-control" id="username" name="username" autofocus placeholder="Usuario" required>
-      </div>
-      <div class="col-lg-4">
-      </div>
+    <!-- Login Form -->
+    <form action="../../controllers/users_controller.php" method="POST">
+      <input type="text" id="username" class="fadeIn second" name="username" placeholder="login">
+      <input type="password" class="fadeIn third" id="passwd" name="passwd" autofocus placeholder="Contraseña" required>
+      <input type="submit" class="fadeIn fourth" value="Ingresar"  name="Ingresar" >
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvido su contraseña?</a>
     </div>
 
-    <br>
-
-    <div class="row">
-      <div class="col-lg-4">
-      </div>
-      <div class="col-lg-4 text-left" >
-        <label for="nombre" class="label_formularios">Contraseña:</label>
-        <input type="password" class="form-control" id="passwd" name="passwd" autofocus placeholder="Contraseña" required>
-      </div>
-      <div class="col-lg-4">
-      </div>
-    </div>
-
-    <br>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-12 col-xs-12">
-      </div>
-      <div class="col-lg-4 text-center">
-        <input type="submit" name="Ingresar" class="btn btn-success ingresar" value="Ingresar" >
-      </div>
-      <div class="col-lg-4 col-md-12 col-xs-12">
-      </div>
-    </div>
-        </form>
-      </div>
-    </div>
   </div>
 </div>
